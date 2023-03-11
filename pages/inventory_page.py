@@ -1,5 +1,4 @@
 from playwright.sync_api import Page
-import config
 
 
 class InventoryPage:
@@ -8,4 +7,3 @@ class InventoryPage:
     def validate_page_title(self, page: Page) -> None:
         title = page.locator(self._PAGE_TITTLE).text_content()
         assert title == 'Swag Labs', 'Page title changed'
-

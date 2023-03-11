@@ -1,7 +1,7 @@
-from config.url import Url
+from config.host import Host
 from config.playwright import Playwright
 from config.expectations import Expectations
 
-url = Url()
+host = Host()
 playwright = Playwright()
 expectations = Expectations()
